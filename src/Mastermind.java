@@ -21,7 +21,7 @@ public class Mastermind {
         System.out.println("Je hebt gewonnen zodra je de code hebt geraden. Ik houd het aantal pogingen voor je bij. Gewoon, omdat het kan.");
         System.out.println("Klaar voor de start? Toets 'interim-hottentottententententoonstellingsterreincoördinatoropleidingsassistent' in of gewoon 'ja' om te starten.");
 
-        for (int indexKlaarVoorDeStart = 0; indexKlaarVoorDeStart < 10; indexKlaarVoorDeStart++) {
+        for (int indexKlaarVoorDeStart = 0; ; indexKlaarVoorDeStart++) {
             String volgendeStap = scanner.nextLine();
             if (volgendeStap.equals("Ja") || volgendeStap.equals("ja") || volgendeStap.equals("interim-hottentottententententoonstellingsterreincoördinatoropleidingsassistent")) {
                 System.out.println("Let's go, " + speler.getNaamVanSpeler() + "!");
