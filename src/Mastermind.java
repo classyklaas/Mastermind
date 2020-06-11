@@ -42,7 +42,6 @@ public class Mastermind {
             charArray[index] = ch;
         }
         String code = new String(charArray);
-        System.out.println(code);
 
         while (stopHetSpel == 0) {
             System.out.println("Voer alsjeblieft een code in");
@@ -57,7 +56,7 @@ public class Mastermind {
                 break;
             } else {
                 for (int index = 0; index < 4; index++) {
-                    System.out.println(code.charAt(index));
+
                     if (antwoord.contains(String.valueOf(code.charAt(index)))) { // beoordeel of de karakter voorkomt in de code
                         if (antwoord.charAt(index) == code.charAt(index)) { // zo ja, ga verder en bekijk of de karakters identiek zijn op dezelfde locaties
                             aantalLettersJuistePlek++;
